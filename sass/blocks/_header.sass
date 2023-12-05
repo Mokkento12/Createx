@@ -1,0 +1,55 @@
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 0
+
+.navigation
+  &-list
+    display: flex
+    &-item
+      font-family: $ubuntu
+      font-size: 16px
+      font-style: normal
+      font-weight: 700
+      line-height: 160%
+      list-style: none
+      .navigation-link
+        color: $lightgray
+        text-decoration: none
+        margin-right: 40px
+        cursor: pointer
+
+  .navigation-link.active
+    color: $primary
+
+.contact
+  display: flex
+.call-us, .talk-to-us
+  display: flex
+  align-items: center
+  margin-right: 36px
+
+.call-us img, .talk-to-us img
+  width: 40px
+  height: 40px
+  margin-right: 12px
+
+.contact-text
+  display: flex
+  flex-direction: column
+
+.call-us span, .talk-to-us span
+  display: block
+  color: $lightgray
+  font-size: 14px
+  font-style: normal
+  font-weight: 700
+  line-height: 150%
+
+  .contacts-info
+    color: $darkgray
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 150%

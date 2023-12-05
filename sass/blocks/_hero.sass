@@ -1,0 +1,137 @@
+.hero
+  background-image: linear-gradient(0deg, rgba(30, 33, 44, 0.60) 0%, rgba(30, 33, 44, 0.60) 100%), url('../img/hero-bg.jpg')
+  width: 100%
+  min-height: 988px
+  background-repeat: no-repeat
+  background-size: cover
+  margin-bottom: 120px
+  .hero-wrapper
+    text-align: left
+    padding-top: 220px
+
+  &-title, &-text
+    font-family: $ubuntu
+    color: $light
+
+  &-title
+    width: 577px
+    height: 188px
+    font-size: 72px
+    font-style: normal
+    font-weight: 700
+    line-height: 130%
+    letter-spacing: 1px
+    margin: 0 0 24px 0
+
+  &-text
+    width: 595px
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 150%
+    margin-bottom: 61px
+
+  .hero-buttons
+    display: flex
+    align-items: center
+    margin-bottom: 179px
+
+    .hero-button-about
+      padding: 10px 40px
+      border-radius: 4px
+      border: 1px solid $light
+      margin-right: 24px
+      color: $light
+      text-align: center
+      font-size: 16px
+      font-style: normal
+      font-weight: 700
+      line-height: 52px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      background: none
+      cursor: pointer
+    .hero-button-submit
+      padding: 10px 40px
+      color: $light
+      text-align: center
+      font-family: $ubuntu
+      font-size: 16px
+      font-style: normal
+      font-weight: 700
+      line-height: 52px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      border-radius: 4px
+      background: $primary
+      border: none
+      cursor: pointer
+
+.tabs
+  display: flex
+
+  .tab
+    width: 178px
+    height: 54px
+    cursor: pointer
+    margin: 0 5px
+    user-select: none
+    position: relative
+    font-family: $ubuntu
+    font-size: 28px
+    font-style: normal
+    font-weight: 700
+    line-height: 150%
+    color: $light
+
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: $light
+      bottom: 0
+      opacity: 0.3
+      transition: opacity 0.3s
+
+  .tab.active
+    &::before
+      opacity: 1
+
+.primary-x
+  color: $primary
+
+.swiper
+  width: 100%
+  height: 100%
+  position: relative
+.button-next, .button-prev
+  width: 48px
+  height: 48px
+  border: none
+  border-radius: 50%
+  position: absolute
+  cursor: pointer
+  top: 50%
+  background-color: transparent
+  opacity: 0.5
+
+.button-next
+  background-image: url('../img/arrow-next.svg')
+  background-repeat: no-repeat
+  background-position: center
+  right: 32px
+  z-index: 99
+
+.button-prev
+  background-image: url('../img/arrow-prev.svg')
+  background-repeat: no-repeat
+  background-position: center
+  left: 32px
+  z-index: 99
+
+.button-next:hover, .button-prev:hover
+  opacity: 1
+
+.button-next:active, .button-prev:active
+  opacity: 1

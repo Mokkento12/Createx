@@ -1,0 +1,113 @@
+.portfolio
+  display: flex
+  flex-direction: column
+  margin-bottom: 120px
+  overflow: hidden
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-right: 15px
+    &-title
+      max-width: 705px
+      color: $darkgray
+      font-family: $ubuntu
+      font-size: 46px
+      font-style: normal
+      font-weight: 700
+      line-height: 130%
+      margin-bottom: 60px
+  &-bottom
+    display: flex
+    justify-content: space-between
+    margin-bottom: 80px
+
+.folio-card
+  position: relative
+  height: 440px
+  border-radius: 4px
+  background: $light
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08)
+  overflow: hidden
+  transition: transform 0.3s ease-in-out
+  &:hover
+    transform: scale(1.1)
+    .hover-button
+      display: block
+  &-content
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: $light
+    padding: 16px 20px 24px
+  & img
+    border-radius: 4px
+
+.folio-title
+  color: $darkgray
+  text-align: center
+  font-family: $ubuntu
+  font-size: 20px
+  font-style: normal
+  font-weight: 700
+  line-height: 150%
+  margin-bottom: 4px
+
+.folio-text
+  color: $lightgray-700
+  text-align: center
+  font-family: $ubuntu
+  font-size: 14px
+  font-style: normal
+  font-weight: 400
+  line-height: 150%
+  margin-bottom: 24px
+
+.hover-button
+  margin: auto
+  padding: 0px 32px
+  border-radius: 4px
+  border: 1px solid $primary
+  background-color: $light
+  color: $primary
+  display: none
+
+.swiper-buttons
+  display: flex
+  gap: 35px
+
+.portfolio-button-prev,
+.portfolio-button-next
+  width: 18px
+  height: 12px
+  position: relative
+
+.portfolio-button-prev::before,
+.portfolio-button-next::before
+  content: ''
+  position: absolute
+  width: 48px
+  height: 48px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  border-radius: 50%
+  transition: background-color 0.3s
+  top: 55%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.portfolio-button-prev svg,
+.portfolio-button-next svg
+  width: 100%
+  height: 100%
+  transition: fill 0.3s
+
+.portfolio-button-prev:hover::before,
+.portfolio-button-next:hover::before
+  background-color: $primary
+
+.portfolio-button-prev:hover svg,
+.portfolio-button-next:hover svg
+  fill: white
