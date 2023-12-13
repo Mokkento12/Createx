@@ -1,0 +1,82 @@
+.benefits-block
+  background: $darkgray
+  padding: 80px 0 100px 0
+.benefits-title
+  color: $light
+  text-align: center
+  font-family: $ubuntu
+  font-size: 46px
+  font-style: normal
+  font-weight: 700
+  line-height: 130%
+  margin-bottom: 24px
+.benefits-text
+  color: $light
+  text-align: center
+  font-family: $ubuntu
+  font-size: 18px
+  font-style: normal
+  font-weight: 400
+  line-height: 150%
+  opacity: 0.6
+  margin-bottom: 60px
+
+.benefits-bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+.benefits-item
+  position: relative
+
+  &:not(:last-child)::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -94px
+    transform: translateY(-50%)
+    width: 1px
+    height: 188px
+    opacity: 0.4
+    background: linear-gradient(rgba(218, 219, 221, 0.00), rgba(218, 219, 221, 0.50), #DADBDD, rgba(218, 219, 221, 0.50), rgba(218, 219, 221, 0.00))
+
+.benefits-icon
+  margin-bottom: 24px
+
+.benefits-item-title
+  color: $light
+  text-align: center
+  font-family: $ubuntu
+  font-size: 20px
+  font-style: normal
+  font-weight: 700
+  line-height: 150%
+  margin-bottom: 8px
+
+.benefits-item-text
+  width: 285px
+  color: $light
+  text-align: center
+  font-family: $ubuntu
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 160%
+  opacity: 0.6
+
+.benefits-button
+  border-radius: 4px
+  background: $primary
+  color: $light
+  text-align: center
+  font-family: $ubuntu
+  font-size: 16px
+  font-style: normal
+  font-weight: 700
+  line-height: 52px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  text-decoration: none
+  padding: 15px 112px
+  position: relative
+  bottom: -125px
+  cursor: pointer
