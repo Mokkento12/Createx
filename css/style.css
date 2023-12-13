@@ -1877,6 +1877,7 @@ button {
 
 .offer-text {
   display: flex;
+  position: relative;
 }
 
 .offer-title {
@@ -1913,6 +1914,10 @@ button {
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
+.offer-desc-text-2 {
+  position: absolute;
+}
+
 .hidden {
   display: none;
   opacity: 0;
@@ -1944,29 +1949,30 @@ button {
   cursor: pointer;
 }
 .step-item-img {
-  fill: #D7DADD;
   margin-bottom: 16px;
+  fill: #D7DADD;
 }
-
 .step-item:hover .step-item-img {
   fill: #FF5A30;
   filter: brightness(1.5) saturate(2);
-  transition: background-color 0.3s ease;
+  transition: fill 0.3s ease;
 }
-
-.step-item-img::before {
+.step-item::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -40px;
+  left: -30px;
+  width: 116px;
+  height: 116px;
   border-radius: 50%;
-  background-color: #FF5A30;
-  background-image: url("img/bg-circles.png");
+  background-image: url("../img/bg-circles.png");
   background-size: cover;
   z-index: -1;
-  transition: background-color 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.step-item:hover::before {
+  opacity: 1;
 }
 
 .line {

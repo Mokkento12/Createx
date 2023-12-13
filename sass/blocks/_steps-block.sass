@@ -19,27 +19,30 @@
   cursor: pointer
 
   &-img
-    fill: $lightgray-400
     margin-bottom: 16px
+    fill: $lightgray-400
 
-.step-item:hover .step-item-img
-  fill: $primary
-  filter: brightness(1.5) saturate(2)
-  transition: background-color 0.3s ease
+  &:hover &-img
+    fill: $primary
+    filter: brightness(1.5) saturate(2)
+    transition: fill 0.3s ease
 
-.step-item-img::before
-  content: ""
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  border-radius: 50%
-  background-color: $primary
-  background-image: url('img/bg-circles.png')
-  background-size: cover
-  z-index: -1
-  transition: background-color 0.3s ease
+  &::before
+    content: ""
+    position: absolute
+    top: -40px
+    left: -30px
+    width: 116px
+    height: 116px
+    border-radius: 50%
+    background-image: url('../img/bg-circles.png')
+    background-size: cover
+    z-index: -1
+    opacity: 0
+    transition: opacity 0.3s ease
+
+  &:hover::before
+    opacity: 1
 
 .line
   position: relative
