@@ -2155,8 +2155,8 @@ button {
 .table-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 32px 24px 24px;
+  justify-content: space-center;
+  padding: 32px 0 24px 24px;
 }
 
 .col-desc {
@@ -2173,7 +2173,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  margin-right: 400px;
+  margin-right: 370px;
 }
 
 .col-strong {
@@ -2200,7 +2200,28 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 16px;
+  padding: 16px 150px 24px 24px;
+}
+
+.row__dark {
+  background: #F4F5F6;
+}
+
+.mark-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.mark-image {
+  max-width: 100%;
+}
+
+.row-desc {
+  width: 280px;
+  text-align: left;
 }
 
 .row-desc-title {
