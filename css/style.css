@@ -2215,10 +2215,6 @@ button {
   height: 24px;
 }
 
-.mark-image {
-  max-width: 100%;
-}
-
 .row-desc {
   width: 280px;
   text-align: left;
@@ -2231,4 +2227,35 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.mark__days {
+  width: 55px;
+}
+
+.table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 32px 71px 24px 24px;
+}
+
+.items-col-footer {
+  margin-right: 300px;
+}
+
+.table-button {
+  padding: 0px 24px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #FF5A30;
+  color: #FF5A30;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
