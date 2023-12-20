@@ -2267,4 +2267,48 @@ button {
 
 .testimonials__pricing__title {
   padding: 0;
+}
+
+.work-page-hero {
+  background: #F4F5F6;
+}
+
+.work-page-block {
+  position: relative;
+  height: 600px;
+  padding: 80px 0 180px;
+}
+
+.work-bg-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.work-description {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.work-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.work-text {
+  width: 600px;
+  text-align: left;
+  color: #787A80;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }/*# sourceMappingURL=style.css.map */
