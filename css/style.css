@@ -2424,4 +2424,39 @@ button {
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.cottage-bg-image {
+  width: 854px;
+  height: 822px;
+  position: absolute;
+  opacity: 0.12;
+  top: 48px;
+  right: -13%;
+}
+
+.cottage-page-hero {
+  height: 1506px;
+}
+
+.cottage-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.cottage-swiper {
+  width: 1230px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.cottage-button__prev, .cottage-button__next {
+  top: 60%;
 }/*# sourceMappingURL=style.css.map */
