@@ -4,19 +4,23 @@ const cottageSwiper = new Swiper(".cottage-swiper", {
     nextEl: ".button-next",
     prevEl: ".button-prev",
   },
+  on: {
+    slideChange: function () {
+      updateActiveTab(this.realIndex);
+    },
+  },
 });
 
-const tabButtons = document.querySelectorAll(".cottage-tab");
-
-tabButtons.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    cottageSwiper.slideTo(index);
-    updateActiveTab(index);
-  });
-});
+function changeSlide(index) {
+  cottageSwiper.slideTo(index);
+  updateActiveTab(index);
+}
 
 function updateActiveTab(activeIndex) {
-  tabButtons.forEach((button, index) => {
-    button.classList.toggle("active", index === activeIndex);
+  const tabs = document.querySelectorAll(".cottage-tabs .cottage-tab");
+  tabs.forEach((tab, index) => {
+    tab.classList.toggle("active", index === activeIndex);
   });
 }
+
+updateActiveTab(cottageSwiper.realIndex);
