@@ -2561,4 +2561,50 @@ button {
   font-weight: 400;
   line-height: 160%;
   text-align: left;
+}
+
+.constructive-block {
+  background: #F4F5F6;
+  display: flex;
+  justify-content: center;
+  height: 570px;
+  padding-top: 80px;
+}
+
+.constructive-img {
+  border-radius: 4px;
+  margin-right: 133px;
+}
+
+.constructive-title {
+  color: #1E212C;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 60px;
+}
+
+.bulleted-line {
+  display: flex;
+  align-items: center;
+}
+
+.bulleted-line:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.checked-img {
+  margin-right: 16px;
+}
+
+.bullet-text {
+  color: #424551;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }/*# sourceMappingURL=style.css.map */
