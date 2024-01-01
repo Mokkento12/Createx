@@ -24,3 +24,11 @@ function updateActiveTab(activeIndex) {
 }
 
 updateActiveTab(cottageSwiper.realIndex);
+
+const portfolioSwiper = new Swiper(".swiper-portfolio", {
+  loop: true,
+  navigation: {
+    nextEl: ".portfolio-button-next",
+    prevEl: ".portfolio-button-prev",
+  },
+});
