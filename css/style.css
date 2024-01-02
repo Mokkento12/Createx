@@ -2684,4 +2684,49 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.about-desc-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 0;
+}
+
+.statistic-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statistic-img {
+  margin-bottom: 20px;
+}
+
+.statistic-title {
+  color: #FF5A30;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.statistic-text {
+  color: #1E212C;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 240px;
 }/*# sourceMappingURL=style.css.map */
