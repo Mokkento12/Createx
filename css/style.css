@@ -2820,4 +2820,9 @@ button {
   bottom: -350px;
   right: 0;
   z-index: -2;
+}
+
+.about-history {
+  background: #F4F5F6;
+  padding: 80px 100px;
 }/*# sourceMappingURL=style.css.map */
