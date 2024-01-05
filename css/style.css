@@ -2691,6 +2691,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .statistics {
@@ -2812,4 +2813,11 @@ button {
 .ceo-signature {
   width: 100px;
   height: 68px;
+}
+
+.about-desc-bg {
+  position: absolute;
+  bottom: -350px;
+  right: 0;
+  z-index: -2;
 }/*# sourceMappingURL=style.css.map */
