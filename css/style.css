@@ -2871,6 +2871,7 @@ button {
   gap: 20px;
   flex-direction: column;
   margin-right: 171px;
+  position: relative;
 }
 
 .date {
@@ -2880,6 +2881,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  position: relative;
 }
 
 .date.active {
