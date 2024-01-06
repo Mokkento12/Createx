@@ -2886,6 +2886,30 @@ button {
   color: #FF5A30;
 }
 
+.date:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #787A80;
+  margin-right: 17px;
+  position: relative;
+  bottom: 5px;
+  border-radius: 50%;
+}
+
+.date.active:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #FF5A30;
+  margin-right: 17px;
+  position: relative;
+  bottom: 5px;
+  border-radius: 50%;
+}
+
 .swiper-buttons {
   display: flex;
   gap: 35px;

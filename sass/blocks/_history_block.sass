@@ -44,6 +44,28 @@
 .date.active
   color: $primary
 
+.date:before
+  content: ''
+  width: 8px
+  height: 8px
+  display: inline-block
+  background-color: $lightgray-700
+  margin-right: 17px
+  position: relative
+  bottom: 5px
+  border-radius: 50%
+
+.date.active:before
+  content: ''
+  width: 8px
+  height: 8px
+  display: inline-block
+  background-color: $primary
+  margin-right: 17px
+  position: relative
+  bottom: 5px
+  border-radius: 50%
+
 .swiper-buttons
   display: flex
   gap: 35px
