@@ -2791,6 +2791,17 @@ button {
   margin-bottom: 60px;
 }
 
+.ceo-text:before {
+  content: "";
+  width: 28px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 77px;
+  background-image: url(../img/braces.svg);
+}
+
 .ceo-name {
   color: #1E212C;
   font-family: "Ubuntu", sans-serif;
