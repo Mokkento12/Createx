@@ -178,7 +178,7 @@
                     to receive
                     information about new vacancies.</p>
                 <div class="cta-buttons">
-                    <button class="cta-btn-sub">subscribe</button>
+                    <button data-modal class="cta-btn-sub">subscribe</button>
                     <button class="cta-btn-send">send cv</button>
                 </div>
                 <!-- /.cta-buttons -->
@@ -361,6 +361,20 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <!-- Form -->
+    <div class="subscribe-overlay" id="subscribeOverlay">
+        <div class="subscribe-form">
+            <h2 class="form-title">Subscribe to our newsletter</h2>
+            <form id="subscribeForm">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit"
+                    class="cta-btn-send subscribe-btn">send</button>
+            </form>
+        </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/history.js"></script>
 </body>
