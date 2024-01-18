@@ -362,17 +362,18 @@
     </footer>
     <!-- /.footer -->
     <!-- Form -->
-    <div class="modal" id="subscribeOverlay">
+    <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
-                <form id="subscribeForm">
-                    <button class="close-btn"><img src="img/cross.svg" alt=""
+                <form class="modal__form">
+                    <button data-close class="close-btn"><img
+                            src="img/cross.svg" alt=""
                             class="cross-img"></button>
-                    <h2 class="form-title">Subscribe to our newsletter</h2>
-                    <label for="name">Name*</label>
+                    <h2 class="modal__title">Subscribe to our newsletter</h2>
+                    <label class="modal__label" for="name">Name*</label>
                     <input class="modal__input" type="text" id="name"
                         name="name" required>
-                    <label for="email">Email*</label>
+                    <label class="modal__label" for="email">Email*</label>
                     <input class="modal__input" type="email" id="email"
                         name="email" required>
                 </form>
@@ -382,6 +383,6 @@
         </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/pos.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
