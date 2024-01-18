@@ -362,20 +362,26 @@
     </footer>
     <!-- /.footer -->
     <!-- Form -->
-    <div class="subscribe-overlay" id="subscribeOverlay">
-        <div class="subscribe-form">
-            <h2 class="form-title">Subscribe to our newsletter</h2>
-            <form id="subscribeForm">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
+    <div class="modal" id="subscribeOverlay">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form id="subscribeForm">
+                    <button class="close-btn"><img src="img/cross.svg" alt=""
+                            class="cross-img"></button>
+                    <h2 class="form-title">Subscribe to our newsletter</h2>
+                    <label for="name">Name*</label>
+                    <input class="modal__input" type="text" id="name"
+                        name="name" required>
+                    <label for="email">Email*</label>
+                    <input class="modal__input" type="email" id="email"
+                        name="email" required>
+                </form>
                 <button type="submit"
                     class="cta-btn-send subscribe-btn">send</button>
-            </form>
+            </div>
         </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/history.js"></script>
+    <script src="js/pos.js"></script>
 </body>
 </html>
