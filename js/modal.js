@@ -4,8 +4,7 @@ const modalCloseBtn = document.querySelector("[data-close]");
 
 modalTrigger.forEach((btn) => {
   btn.addEventListener("click", () => {
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden";
+    openModal(modal);
   });
 });
 
@@ -27,3 +26,37 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+const modalTriggerCv = document.querySelectorAll("[data-cv]");
+const modalCv = document.querySelector(".modal__cv");
+const modalCloseBtnCv = document.querySelector(".modal__cv [data-close]");
+
+modalTriggerCv.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    openModal(modalCv);
+  });
+});
+
+function closeModalCv() {
+  modalCv.style.display = "none";
+  document.body.style.overflow = "";
+}
+
+modalCloseBtnCv.addEventListener("click", closeModalCv);
+
+modalCv.addEventListener("click", (e) => {
+  if (e.target === modalCv) {
+    closeModalCv();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "Escape" && modalCv.style.display === "block") {
+    closeModalCv();
+  }
+});
+
+function openModal(selectedModal) {
+  selectedModal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
