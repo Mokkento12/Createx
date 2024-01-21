@@ -179,7 +179,7 @@
                     information about new vacancies.</p>
                 <div class="cta-buttons">
                     <button data-modal class="cta-btn-sub">subscribe</button>
-                    <button class="cta-btn-send">send cv</button>
+                    <button data-cv class="cta-btn-send">send cv</button>
                 </div>
                 <!-- /.cta-buttons -->
             </div>
@@ -376,6 +376,48 @@
                     <label class="modal__label" for="email">Email*</label>
                     <input class="modal__input" type="email" id="email"
                         name="email" required>
+                </form>
+                <button type="submit"
+                    class="cta-btn-send subscribe-btn">send</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__cv">
+        <div class="modal__dialog__cv">
+            <div class="modal__content__cv">
+                <h2 class="modal__title cv__title">Send your CV</h2>
+                <form class="modal__form form__cv">
+                    <button data-close class="close-btn"><img
+                            src="img/cross.svg" alt=""
+                            class="cross-img"></button>
+                    <label class="modal__label" for="name">Name*</label>
+                    <input class="modal__input" type="text" id="name"
+                        name="name" required>
+                    <label class="modal__label" for="location">Location*</label>
+                    <select class="modal__input" id="location" name="location"
+                        required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="city1">Москва</option>
+                        <option value="city2">Санкт-Петербург</option>
+                        <!-- Добавьте другие города, как необходимо -->
+                    </select>
+                    <label class="modal__label" for="tel">Phone*</label>
+                    <input class="modal__input" type="tel" id="tel" name="tel"
+                        required>
+                    <label class="modal__label" for="email">Email*</label>
+                    <input class="modal__input" type="email" id="email"
+                        name="email" required>
+                    <label class="modal__label" for="message">Сovering
+                        letter</label>
+                    <textarea class="modal__input" id="message"
+                        name="message"></textarea>
+                    <label class="file-upload" for="file">
+                        <img src="img/attach.svg" alt="File Icon"
+                            class="attach-file">
+                        <span>Attach your CV*</span>
+                    </label>
+                    <input type="file" id="file" name="file" multiple
+                        style="display: none;">
                 </form>
                 <button type="submit"
                     class="cta-btn-send subscribe-btn">send</button>
