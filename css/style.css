@@ -3461,4 +3461,10 @@ button {
 
 .attach-file {
   margin-right: 12px;
+}
+
+.news-bg-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
