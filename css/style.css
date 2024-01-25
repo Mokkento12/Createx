@@ -3477,6 +3477,45 @@ button {
 
 .news-container {
   padding: 120px 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.news-title {
+  color: #1E212C;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.news-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.news-tab {
+  padding: 10px 69px;
+  color: #9A9CA5;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.news-tab.active {
+  border-radius: 4px;
+  border: 1px solid #FF5A30;
+  color: #FF5A30;
 }
 
 .news-items {
