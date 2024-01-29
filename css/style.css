@@ -3545,4 +3545,29 @@ button {
 
 .news-description {
   max-width: 705px;
+}
+
+.news-paginatios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num {
+  color: #424551;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin-right: 20px;
+}
+
+.num.active {
+  color: #FF5A30;
+}
+
+.num-btn {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=style.css.map */
