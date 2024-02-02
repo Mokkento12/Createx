@@ -1,35 +1,20 @@
-// const tabs = document.querySelectorAll(".tabheader__item");
-// const tabsContent = document.querySelectorAll(".tabcontent");
-// const tabsParent = document.querySelector(".tabheader__items");
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".news-tab");
+  const swiperContainer = document.querySelector(".swiper-container");
 
-// function hideTabContent() {
-//   tabsContent.forEach((item) => {
-//     item.classList.add("hide");
-//     item.classList.remove("show", "fade");
-//   });
-//   tabs.forEach((item) => {
-//     item.classList.remove("tabheader__item_active");
-//   });
-// }
+  const mySwiper = new Swiper(swiperContainer, {
+    loop: true,
+    navigation: {
+      nextEl: ".num-btn__next",
+      prevEl: ".num-btn__prev",
+    },
+  });
 
-// function showTabContent(i = 0) {
-//   tabsContent[i].classList.add("show", "fade");
-//   tabsContent[i].classList.remove("hide");
-//   tabs[i].classList.add("tabheader__item_active");
-// }
-
-// hideTabContent();
-// showTabContent();
-
-// tabsParent.addEventListener("click", (event) => {
-//   const target = event.target;
-
-//   if (target && target.classList.contains("tabheader__item")) {
-//     tabs.forEach((item, i) => {
-//       if (item == target) {
-//         hideTabContent();
-//         showTabContent(i);
-//       }
-//     });
-//   }
-// });
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      mySwiper.slideTo(index);
+    });
+  });
+});
