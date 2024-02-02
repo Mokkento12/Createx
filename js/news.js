@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
       mySwiper.slideTo(index);
 
       if (index === 0) {
-        prevBtn.style.display = "none";
+        prevBtn.classList.add("hidden");
       } else {
-        prevBtn.style.display = "block";
+        prevBtn.classList.remove("hidden");
       }
 
       if (index === 3) {
-        nextBtn.style.display = "none";
+        nextBtn.classList.add("hidden");
       } else {
-        nextBtn.style.display = "block";
+        nextBtn.classList.remove("hidden");
       }
     });
   });
@@ -44,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
     mySwiper.slideTo(index);
 
     if (index === 0) {
-      prevBtn.style.display = "none";
+      prevBtn.classList.add("hidden");
     } else {
-      prevBtn.style.display = "block";
+      prevBtn.classList.remove("hidden");
     }
 
     if (index === 3) {
-      nextBtn.style.display = "none";
+      nextBtn.classList.add("hidden");
     } else {
-      nextBtn.style.display = "block";
+      nextBtn.classList.remove("hidden");
     }
   }
 

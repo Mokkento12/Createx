@@ -3573,7 +3573,17 @@ button {
 }
 .num-btn__prev {
   margin-right: 20px;
-  display: none;
+}
+
+.num-btn__prev,
+.num-btn__next {
+  transition: opacity 0.3s ease;
+}
+
+.num-btn__prev.hidden,
+.num-btn__next.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .news-items__container {
