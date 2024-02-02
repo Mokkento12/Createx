@@ -3588,9 +3588,20 @@ button {
   margin-bottom: 60px;
 }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+.view-btn {
+  padding: 0px 32px;
+  background-color: #FF5A30;
+  cursor: pointer;
+  border: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
