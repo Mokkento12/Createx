@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".news-tab");
   const swiperContainer = document.querySelector(".swiper-container");
   const nums = document.querySelectorAll(".num");
+  const slides = document.querySelectorAll(".slide");
   const prevBtn = document.querySelector(".num-btn__prev");
   const nextBtn = document.querySelector(".num-btn__next");
 
@@ -18,6 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
       tabs.forEach((t) => t.classList.remove("active"));
       tab.classList.add("active");
       mySwiper.slideTo(index);
+
+      if (index === 0) {
+        prevBtn.style.display = "none";
+      } else {
+        prevBtn.style.display = "block";
+      }
+
+      if (index === 3) {
+        nextBtn.style.display = "none";
+      } else {
+        nextBtn.style.display = "block";
+      }
     });
   });
 
@@ -26,6 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
       el.classList.remove("active");
     });
     num.classList.add("active");
+
+    const index = +num.dataset.index;
+    mySwiper.slideTo(index);
+
+    if (index === 0) {
+      prevBtn.style.display = "none";
+    } else {
+      prevBtn.style.display = "block";
+    }
+
+    if (index === 3) {
+      nextBtn.style.display = "none";
+    } else {
+      nextBtn.style.display = "block";
+    }
   }
 
   nums.forEach(function (num) {
