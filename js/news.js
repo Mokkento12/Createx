@@ -21,12 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  function moveTo(num) {
+    nums.forEach(function (el) {
+      el.classList.remove("active");
+    });
+    num.classList.add("active");
+  }
+
   nums.forEach(function (num) {
     num.addEventListener("click", function () {
-      nums.forEach(function (el) {
-        el.classList.remove("active");
-      });
-      num.classList.add("active");
+      moveTo(num);
     });
   });
 
@@ -36,8 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentActive.previousElementSibling &&
       currentActive.previousElementSibling.classList.contains("num")
     ) {
-      currentActive.classList.remove("active");
-      currentActive.previousElementSibling.classList.add("active");
+      moveTo(currentActive.previousElementSibling);
     }
   });
 
@@ -47,8 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
       currentActive.nextElementSibling &&
       currentActive.nextElementSibling.classList.contains("num")
     ) {
-      currentActive.classList.remove("active");
-      currentActive.nextElementSibling.classList.add("active");
+      moveTo(currentActive.nextElementSibling);
+    } else {
+      moveTo(nums[0]);
     }
   });
 });
