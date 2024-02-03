@@ -3551,6 +3551,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .num {
@@ -3577,7 +3578,16 @@ button {
 
 .num-btn__prev,
 .num-btn__next {
+  position: absolute;
   transition: opacity 0.3s ease;
+}
+
+.num-btn__prev {
+  left: -40px;
+}
+
+.num-btn__next {
+  right: -25px;
 }
 
 .num-btn__prev.hidden,
