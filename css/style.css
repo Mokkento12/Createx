@@ -1317,6 +1317,7 @@ button {
   line-height: 150%;
   margin-bottom: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .news-details {
@@ -3624,4 +3625,63 @@ button {
   text-transform: uppercase;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.industry-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.industry-about {
+  align-items: stretch;
+}
+
+.category-primary {
+  color: #FF5A30;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.news-date, .industry-count {
+  color: #787A80;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.clock-icon, .industry-comment {
+  margin-right: 9px;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  bottom: -4px;
+}
+
+.industry-details {
+  display: flex;
+  align-items: center;
+}
+
+.industry-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.industry-bg {
+  position: absolute;
+  left: 0;
+  top: 130%;
 }/*# sourceMappingURL=style.css.map */
