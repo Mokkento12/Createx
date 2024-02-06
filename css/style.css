@@ -3740,4 +3740,26 @@ button {
   top: 0;
   left: -65px;
   z-index: -1;
+}
+
+.post-list {
+  margin-bottom: 24px;
+}
+
+.post-txt-bottom {
+  margin-bottom: 61px;
+}
+
+.sharing {
+  display: flex;
+  align-items: center;
+}
+
+.share {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 160%;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
