@@ -3762,4 +3762,83 @@ button {
   font-weight: 700;
   line-height: 160%;
   text-align: left;
+}
+
+.post-comments-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.comment-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.post-comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-comment:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.user-name {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.user-date {
+  color: #787A80;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+}
+
+.comment-text {
+  width: 630px;
+  color: #424551;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.share-arrow {
+  margin-right: 9px;
+}
+
+.reply-text {
+  color: #787A80;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+}
+
+.primary {
+  color: #FF5A30;
 }/*# sourceMappingURL=style.css.map */
