@@ -3694,7 +3694,7 @@ button {
 
 .post-content {
   max-width: 810px;
-  padding: 500px 0 80px;
+  padding: 500px 0 180px;
 }
 
 .post-text-bold {
@@ -3769,6 +3769,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 .comment-title {
@@ -3841,4 +3842,57 @@ button {
 
 .primary {
   color: #FF5A30;
+}
+
+.post-form-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post-form-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.inputs-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group:not(:last-child) {
+  margin-right: 30px;
+}
+
+.post-form-label {
+  margin-bottom: 8px;
+}
+
+.post-form-input {
+  width: 390px;
+  height: 52px;
+}
+
+.inputs-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-message {
+  max-width: 810px;
+  height: 100px;
+  margin-bottom: 48px;
+  resize: none;
 }/*# sourceMappingURL=style.css.map */
