@@ -3423,6 +3423,15 @@ button {
   margin-bottom: 20px;
   padding: 8px;
   width: 100%;
+  position: relative;
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.modal__input::-ms-expand {
+  display: none;
 }
 
 .subscribe-btn {
@@ -3452,6 +3461,26 @@ button {
   border: 1px solid var(--gray-400, #D7DADD);
   background: var(--gray-200, #F4F5F6);
   margin-bottom: 24px;
+}
+
+.modal-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.modal-select-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/form-arrow.svg");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 99;
 }
 
 #location {
@@ -3952,6 +3981,21 @@ button {
   display: inline-block;
 }
 
+.select-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/form-arrow.svg");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 99;
+}
+
 .contacts-us-input {
   width: 285px;
   height: 52px;
@@ -3965,15 +4009,12 @@ button {
   border-radius: 4px;
   background: rgb(244, 245, 247);
   position: relative;
+  cursor: pointer;
+  -moz-appearance: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
-  cursor: pointer;
+.select-input::-ms-expand {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

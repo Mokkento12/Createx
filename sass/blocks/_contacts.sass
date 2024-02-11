@@ -44,6 +44,20 @@
   position: relative
   display: inline-block
 
+.select-wrapper:before
+  content: ''
+  position: absolute
+  top: 60%
+  right: 16px
+  transform: translateY(-50%)
+  display: block
+  width: 20px
+  height: 20px
+  background-image: url('../img/form-arrow.svg')
+  background-repeat: no-repeat
+  pointer-events: none
+  z-index: 99
+
 .contacts-us-input
   width: 285px
   height: 52px
@@ -56,11 +70,10 @@
   border-radius: 4px
   background: rgb(244, 245, 247)
   position: relative
+  cursor: pointer
+  -moz-appearance: none
+  -webkit-appearance: none
   appearance: none
 
-.arrow
-  position: absolute
-  top: 50%
-  right: 16px
-  transform: translateY(-50%)
-  cursor: pointer
+.select-input::-ms-expand
+  display: none

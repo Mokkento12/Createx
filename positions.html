@@ -396,14 +396,17 @@
                     <input placeholder="Your name" class="modal__input"
                         type="text" id="name" name="name" required>
                     <label class="modal__label" for="location">Location*</label>
-                    <select class="modal__input" id="location" name="location"
-                        required>
-                        <option value="" selected disabled hidden>Choose your
-                            location</option>
-                        <option value="city1">Москва</option>
-                        <option value="city2">Санкт-Петербург</option>
-                        <!-- Добавьте другие города, как необходимо -->
-                    </select>
+                    <div class="modal-select-wrapper">
+                        <select class="modal__input" id="location"
+                            name="location" required>
+                            <option value="" selected disabled hidden>Choose
+                                your
+                                location</option>
+                            <option value="city1">Москва</option>
+                            <option value="city2">Санкт-Петербург</option>
+                            <!-- Добавьте другие города, как необходимо -->
+                        </select>
+                    </div>
                     <label class="modal__label" for="tel">Phone*</label>
                     <input placeholder="Your phone number" class="modal__input"
                         type="tel" id="tel" name="tel" required>
