@@ -3976,6 +3976,10 @@ button {
   margin-bottom: 24px;
 }
 
+.form-group {
+  width: 285px;
+}
+
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -4043,4 +4047,32 @@ button {
 .contact-method-label {
   margin-bottom: 0;
   margin-right: 24px;
+}
+
+.form-messege-group {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 162px;
+}
+
+.form-group-message {
+  width: 600px;
+  height: 128px;
+  margin-bottom: 40px;
+}
+
+.message-checkbox {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-form-label {
+  margin-right: 75px;
+}
+
+.label-text {
+  width: 287px;
 }/*# sourceMappingURL=style.css.map */
