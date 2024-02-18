@@ -4131,4 +4131,47 @@ button {
   height: 8px;
   border-radius: 50%;
   background: #FF5A30;
+}
+
+.offices-block {
+  padding: 80px 0 95px;
+}
+
+.offices-values {
+  margin-bottom: 120px;
+  text-align: left;
+}
+
+.offices-text {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 4px;
+}
+
+.offices-link {
+  color: #FF5A30;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: left;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.office-contact:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.office-call, .office-email, .office-shelude {
+  color: #787A80;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-right: 4px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
