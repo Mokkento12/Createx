@@ -124,3 +124,50 @@
 
 .label-text
   width: 287px
+
+.checkbox-wrapper
+  display: flex
+  align-items: center
+
+.checkbox-wrapper input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+
+.checkbox-wrapper label
+  display: block
+  position: relative
+  padding-left: 35px
+  margin-right: 24px
+  cursor: pointer
+  font-size: 16px
+  user-select: none
+
+.checkbox-wrapper span
+  position: absolute
+  top: 0
+  left: 0
+  width: 16px
+  height: 16px
+  background-color: rgb(179, 183, 188)
+  border-radius: 50%
+
+.checkbox-wrapper label input:checked ~ span
+  background-color: $primary
+
+  &:after
+    content: ""
+    position: absolute
+    display: none
+
+.checkbox-wrapper label input:checked ~ span:after
+  display: block
+
+.checkbox-wrapper label span:after
+  top: 1.2px
+  left: 1.5px
+  border: 3px solid #fff
+  width: 8px
+  height: 8px
+  border-radius: 50%
+  background: $primary
