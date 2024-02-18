@@ -4142,6 +4142,21 @@ button {
   text-align: left;
 }
 
+.office-value {
+  width: 250px;
+  min-height: 254px;
+}
+
+.office-value:not(:last-child)::before {
+  content: "";
+  width: 1px;
+  height: 254px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(270deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+}
+
 .offices-text {
   color: #1E212C;
   font-family: "Ubuntu", sans-serif;
@@ -4168,7 +4183,7 @@ button {
 
 .office-call, .office-email, .office-shelude {
   color: #787A80;
-  font-family: Ubuntu;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
