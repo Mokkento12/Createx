@@ -4189,4 +4189,44 @@ button {
   line-height: 160%;
   margin-right: 4px;
   text-align: left;
+}
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.follow-title {
+  color: #1E212C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.follow-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.follow-social {
+  fill: #787A80;
+}
+
+.follow-social:hover {
+  fill: #FF5A30;
+}
+
+.follow-link {
+  width: 32px;
+  height: 32px;
+}
+
+.follow-link:not(:last-child) {
+  margin-right: 24px;
 }/*# sourceMappingURL=style.css.map */
